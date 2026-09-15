@@ -1,0 +1,89 @@
+
+.site-header {
+    background-color: #f49b9b4c;
+    padding: 20px;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+}
+
+.nav-link {
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    font-family:Verdana, sans-serif;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    background-color: #f49b9b4c;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+
+body {
+    background-color: #f49b9b4c;
+    font-family: Verdana, sans-serif;
+    margin: 10px;
+}
+
+
+#main-content {
+    font-family:tahoma, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+#games-list {
+    background-color: #f49b9b4c;
+    padding: 40px;
+    margin: 10px;
+    border-radius: 20px;
+    width: 20%;
+}
+
+h2, h1 {
+    font-family: sans-serif;
+    border-bottom: 2px solid #6f2d2d4c;
+    width: 50%;
+}
+
+.game-img ul {
+    display: grid;
+    width: 20%;
+    height: 20%;
+    justify-content: center;
+    gap: 16px;
+    margin: 20px 40px;
+    padding: 0;
+}
+
+.game-img .image {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.game-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.image-gallery ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 200px));
+    gap: 20px;
+    padding: 20px;
+    width: 50%;
+}
+
+.image-gallery .image {
+    overflow: hidden;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
