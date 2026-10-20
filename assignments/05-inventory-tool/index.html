@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>Online Shop</h1>
+    </header>
+    <div class="controls">
+      <select id="category">
+        <option value="all">All Categories</option>
+        <option value="clothing">Clothing</option>
+        <option value="books">Books</option>
+        <option value="cleaning">Cleaning</option>
+      </select>
+
+      <button id="add-selected">Add Selected to Cart</button>
+      <button id="toggle-form">Add Product</button>
+      <button id="reset-store">Reset Store</button>
+    </div>
+
+    
+    <form id="add-product-form" class="add-form hidden">
+      <div id="form-card">
+      <h2>Add Product</h2>
+      <input
+        type="text"
+        name="name"
+        placeholder="Product Name"
+        required
+      />
+      <input
+        type="number"
+        name="price"
+        placeholder="Product Price"
+        required
+      />
+      <select name="product-category" required>
+        <option value="">Select Category</option>
+        <option value="clothing">Clothing</option>
+        <option value="books">Books</option>
+        <option value="cleaning">Cleaning</option>
+      </select>
+
+      <input
+        type="url"
+        name="image"
+        placeholder="Product Image URL"
+        required
+      />
+      <textarea
+        name="description"
+        placeholder="Product Description"
+        required
+      ></textarea>
+      <button type="submit">Add Product</button>
+    </form>
+    </div>
+
+    <div id="root">
+      <div id="products"></div>
+      <div id="cart"></div>
+    </div>
+  </body>
+</html>
