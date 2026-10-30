@@ -1,5 +1,24 @@
 <html>
   <head>
     <title>Pokemon</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/p5@2.3.3/lib/p5.min.js"></script>
+    <script src="script.js"></script>
   </head>
+
+  <body>
+    <div class="main">
+      <h1>Pokemon Stat Comparison</h1>
+
+      <!-- Pokemon comparison inputs -->
+      <div class="inputs">
+        <input id="pokemon1" placeholder="Charizard or 6" />
+        <span>VS</span>
+        <input id="pokemon2" placeholder="Blastoise or 9" />
+        <br /><br />
+        <button onclick="comparePokemon()">Compare!</button>
+      </div>
+    </div>
+    <br />
+  </body>
 </html>
