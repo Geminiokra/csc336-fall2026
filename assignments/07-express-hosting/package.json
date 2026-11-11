@@ -1,4 +1,6 @@
 {
-  "name": "render-test",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
 }
