@@ -10,6 +10,11 @@ const server = express();
 // make files in public folder available to visitors
 server.use(express.static("public"));
 
+// return custom message /about page
+server.get("/about", (req, res) => {
+    res.send("This is my Express hosting assignment.");
+});
+
 // listen for requests; print message when server is ready
 server.listen(port, () => {
     console.log("Server running on port " + port);
