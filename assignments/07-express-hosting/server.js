@@ -1,17 +1,16 @@
+// load the express library so file can create web server
 import express from "express";
 
-// Render tells our server which port to use with the PORT environment variable.
-// On your own computer, PORT isn't set, so we use 3000 instead.
-let port = process.env.PORT || 3000;
+// Render provide PORT when app is deployed; use 3000 during local development
+const port = process.env.PORT || 3000;
 
-// This function runs once for every request that comes in.
-let server = http.createServer((req, res) => {
-    // On Render, this shows up in the Logs page (Render's version of the terminal).
-    console.log(req.method + " " + req.url);
+// create express application; receives browser requests
+const server = express();
 
-    express.static("public")
-});
+// make files in public folder available to visitors
+server.use(express.static("public"));
 
+// listen for requests; print message when server is ready
 server.listen(port, () => {
     console.log("Server running on port " + port);
 });
