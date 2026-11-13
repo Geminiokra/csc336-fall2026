@@ -14,3 +14,5 @@ server.use(express.static("public"));
 server.listen(port, () => {
     console.log("Server running on port " + port);
 });
+
+// finally works omfg jeeeeeezzzz
