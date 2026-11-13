@@ -1,8 +1,8 @@
-import http from "http";
+import express from "express";
 
 // Render tells our server which port to use with the PORT environment variable.
 // On your own computer, PORT isn't set, so we use 3000 instead.
-const port = process.env.PORT || 3000;
+let port = process.env.PORT || 3000;
 
 // This function runs once for every request that comes in.
 let server = http.createServer((req, res) => {
